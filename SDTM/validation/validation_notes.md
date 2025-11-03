@@ -1,0 +1,1 @@
+- Run Pinnacle 21 Community on generated SDTM/ADaM outputs and record findings here.

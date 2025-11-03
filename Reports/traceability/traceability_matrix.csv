@@ -1,0 +1,8 @@
+LEVEL,DATASET,SOURCE,TARGET,NOTES
+SDTM,DM,SDTM/raw_data/dm.csv,SDTM/SDTM_domains/DM.csv,Adds STUDYID/DOMAIN/AGEU
+SDTM,AE,SDTM/raw_data/ae.csv,SDTM/SDTM_domains/AE.csv,Adds STUDYID/DOMAIN
+SDTM,LB,SDTM/raw_data/lb.csv,SDTM/SDTM_domains/LB.csv,Adds LBSTRESC
+SDTM,VS,SDTM/raw_data/vs.csv,SDTM/SDTM_domains/VS.csv,Direct mapping
+ADaM,ADSL,SDTM/SDTM_domains/DM.csv,ADaM/analysis_datasets/ADSL.csv,Spec-driven
+ADaM,ADAE,SDTM/SDTM_domains/AE.csv + DM.csv,ADaM/analysis_datasets/ADAE.csv,Join + TE flag
+ADaM,ADVS,SDTM/SDTM_domains/VS.csv,ADaM/analysis_datasets/ADVS.csv,Spec-driven

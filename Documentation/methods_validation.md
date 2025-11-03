@@ -1,0 +1,1 @@
+Macro-driven metadata mapping plus simple QC.
