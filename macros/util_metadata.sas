@@ -42,9 +42,9 @@
   %read_spec(file=&spec_dir./spec_toc.csv, out=_toc);
   data _toc2;
     set _toc;
-    where upcase(active)='Y';
+    where upcase(active_flag)='Y';
     %if %upcase(&type.) ne ALL %then %do;
-      if upcase(type) ne "%upcase(&type.)" then delete;
+      if upcase(standard) ne "%upcase(&type.)" then delete;
     %end;
   run;
   proc sql noprint;
