@@ -1,0 +1,8 @@
+project_root: /path/to/clinical-programming-portfolio-sas-cdisc
+sas_executable: C:\\Program Files\\SASHome\\SASFoundation\\9.4\\sas.exe
+study_config: config/config_study.sas
+studyid: PORTFOLIO01
+sponsor: Portfolio Labs
+protocol: PORT-001
+sdtm_version: '3.4'
+adam_version: '1.1'

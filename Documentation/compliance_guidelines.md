@@ -1,1 +1,0 @@
-Follow CDISC SDTM/ADaM IG. Validate with P21.

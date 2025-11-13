@@ -1,0 +1,9 @@
+variable,label,type,length,source,derivation
+USUBJID,Unique Subject Identifier,CHAR,20,SDTM.DM,Direct from DM.USUBJID
+STUDYID,Study Identifier,CHAR,20,SDTM.DM,Direct from DM.STUDYID
+ARMCD,Planned Arm Code,CHAR,20,SDTM.DM,Direct from DM.ARMCD
+TRTSDT,Treatment Start Date,NUM,8,SDTM.DM,input(RFSTDTC,yymmdd10.)
+TRTEDT,Treatment End Date,NUM,8,SDTM.DM,input(RFENDTC,yymmdd10.)
+SAFFL,Safety Population Flag,CHAR,1,Derived,Default 'Y'
+EFFFL,Full Analysis Set Flag,CHAR,1,Derived,Default 'Y'
+PPSFL,Per-Protocol Set Flag,CHAR,1,Derived,Default 'Y'

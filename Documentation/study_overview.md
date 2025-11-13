@@ -1,1 +1,0 @@
-Synthetic 2-arm study with 10 subjects.
