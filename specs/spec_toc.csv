@@ -1,0 +1,5 @@
+domain,type,active,description
+DM,SDTM,Y,Demographics
+AE,SDTM,Y,Adverse Events
+ADSL,ADaM,Y,Subject-Level Analysis Dataset
+ADAE,ADaM,Y,Adverse Events Analysis Dataset

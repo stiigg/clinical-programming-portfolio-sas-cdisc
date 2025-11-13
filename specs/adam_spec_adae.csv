@@ -1,0 +1,7 @@
+variable,label,type,length,source,derivation
+USUBJID,Unique Subject Identifier,CHAR,20,SDTM.AE,Direct from AE.USUBJID
+AETERM,Reported Term for the Adverse Event,CHAR,200,SDTM.AE,Direct from AE.AETERM
+AESTDT,Analysis Start Date,NUM,8,SDTM.AE,input(AESTDTC,yymmdd10.)
+AEENDT,Analysis End Date,NUM,8,SDTM.AE,input(AEENDTC,yymmdd10.)
+AESEV,Severity/Intensity,CHAR,8,SDTM.AE,Direct from AE.AESEV
+TRTEMFL,Treatment Emergent Flag,CHAR,1,Derived,Derived via treatment period comparison
