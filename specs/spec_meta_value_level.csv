@@ -1,0 +1,3 @@
+standard,domain,var_name,where_clause_id,where_clause_expression,vlm_label,codelist_id,method_id,data_type,length
+ADAM,ADAE,AVAL,WC_AESEV,PARAMCD='AESEV',Analysis Severity Value,CL_SEVERITY,M_ADAE_AVAL,float,
+ADAM,ADAE,AVAL,WC_AETOX,PARAMCD='AETOX',Toxicity Grade Value,CL_TOXGR,M_ADAE_AVAL,float,

@@ -16,7 +16,7 @@ SAS logs are written to `outputs/logs/`. Use `%scan_log` from [`macros/cdisc_log
 
 * `config/` – Study/global SAS configuration plus environment examples.
 * `data/` – Raw extracts, interim staging, and reference metadata (EVS CT, visit schedule).
-* `specs/` – Authoritative SDTM and ADaM specifications, plus the domain table of contents.
+* `specs/` – Metadata repository (dataset, variable, value-level, codelist, method, and document specs) that feeds SDTM/ADaM builds and Define-XML.
 * `macros/` – Reusable building blocks (`%sdtm_dm`, `%adam_adae`, `%ct_check`, logging/QC helpers, etc.).
 * `etl/` – Drivers that loop through metadata and execute domain macros.
 * `validation/` – Independent QC programs, integrity checks, and QC reporting.
@@ -30,4 +30,5 @@ SAS logs are written to `outputs/logs/`. Use `%scan_log` from [`macros/cdisc_log
 * **Specs as the source of truth:** No domain is processed unless it is activated in [`specs/spec_toc.csv`](specs/spec_toc.csv).
 * **Metadata-driven macros:** ETL programs import specs and call standardized macros for each domain.
 * **Paranoid QC:** Validation programs double-program key datasets and promote PROC COMPARE outputs to `qc/`.
+* **Define-XML 2.1 automation:** `%define_build_meta` and `%define_write_xml_v21` compile the MDR tables into fully formed define.xml files via [`regulatory/define_build.sas`](regulatory/define_build.sas).
 * **Regulatory ready:** Reviewer guide outlines and define.xml snapshots are generated directly from metadata artifacts.

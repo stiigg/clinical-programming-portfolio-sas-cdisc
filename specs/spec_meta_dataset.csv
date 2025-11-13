@@ -1,0 +1,5 @@
+standard,domain,dataset_label,structure,keys,purpose,is_derived,comment,doc_id
+SDTM,DM,Demographics,One record per subject,STUDYID USUBJID,Tabulation,N,,PROTOCOL
+SDTM,AE,Adverse Events,One record per adverse event per subject,STUDYID USUBJID AESEQ,Tabulation,N,,SAP
+ADAM,ADSL,Subject-Level Analysis Dataset,One record per subject,STUDYID USUBJID,Analysis,N,,SAP
+ADAM,ADAE,Adverse Events Analysis Dataset,One record per adverse event per subject,STUDYID USUBJID AESEQ,Analysis,Y,Derivations per SAP,SAP

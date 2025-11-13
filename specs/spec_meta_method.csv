@@ -1,0 +1,5 @@
+method_id,method_type,method_description,program_ref
+M_ADSL_AGE,Derivation,Derive AGE as floor((RFSTDTC - BRTHDTC)/365.25),macros/adam_adsl.sas
+M_ADSL_SAFFL,Derivation,Flag subjects in the safety population based on exposure and informed consent,macros/adam_adsl.sas
+M_ADAE_FLAG,Derivation,Set ANL01FL='Y' for treatment-emergent events,macros/adam_adae.sas
+M_ADAE_AVAL,Derivation,Derive ADAE analysis values based on PARAMCD-specific logic,macros/adam_adae.sas

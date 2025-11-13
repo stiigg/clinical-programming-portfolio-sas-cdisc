@@ -1,0 +1,18 @@
+codelist_id,codelist_name,nci_code,ct_package,decode,code,decode_order,is_sponsor_ct
+CL_SEX,Sex,C66731,2023-12-15,MALE,M,1,N
+CL_SEX,Sex,C66731,2023-12-15,FEMALE,F,2,N
+CL_YN,Yes/No Response,C25347,2023-12-15,Yes,Y,1,N
+CL_YN,Yes/No Response,C25347,2023-12-15,No,N,2,N
+CL_TRT,Treatment Group,,Sponsor,Placebo,PLA,1,Y
+CL_TRT,Treatment Group,,Sponsor,Drug A,DRUGA,2,Y
+CL_SEVERITY,Severity Scale,C41338,2023-12-15,Mild,MILD,1,N
+CL_SEVERITY,Severity Scale,C41338,2023-12-15,Moderate,MOD,2,N
+CL_SEVERITY,Severity Scale,C41338,2023-12-15,Severe,SEV,3,N
+CL_TOXGR,CTCAE Toxicity Grade,C67154,2023-12-15,Grade 1,1,1,N
+CL_TOXGR,CTCAE Toxicity Grade,C67154,2023-12-15,Grade 2,2,2,N
+CL_TOXGR,CTCAE Toxicity Grade,C67154,2023-12-15,Grade 3,3,3,N
+CL_AE_PARAM,Adverse Event Parameters,,Sponsor,Seriousness,AESER,1,Y
+CL_AE_PARAM,Adverse Event Parameters,,Sponsor,Severity,AESEV,2,Y
+CL_AE_PARAM,Adverse Event Parameters,,Sponsor,Toxicity Grade,AETOX,3,Y
+CL_MEDDRA,MedDRA Preferred Term,,MedDRA,Headache,10019211,1,N
+CL_MEDDRA,MedDRA Preferred Term,,MedDRA,Nausea,10028813,2,N

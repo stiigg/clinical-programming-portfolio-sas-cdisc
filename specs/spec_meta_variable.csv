@@ -1,0 +1,29 @@
+standard,domain,var_name,var_label,data_type,length,role,origin,codelist_id,method_id,mandatory,display_format,xml_order
+SDTM,DM,STUDYID,Study Identifier,text,12,Identifier,Collected,,,Yes,,1
+SDTM,DM,DOMAIN,Domain Abbreviation,text,8,Identifier,Assigned,,,Yes,,2
+SDTM,DM,USUBJID,Unique Subject Identifier,text,20,Identifier,Collected,,,Yes,,3
+SDTM,DM,SUBJID,Subject Identifier for the Study,text,8,Identifier,Collected,,,No,,4
+SDTM,DM,SEX,Sex,text,1,Topic,Collected,CL_SEX,,No,,5
+SDTM,AE,STUDYID,Study Identifier,text,12,Identifier,Collected,,,Yes,,1
+SDTM,AE,DOMAIN,Domain Abbreviation,text,8,Identifier,Assigned,,,Yes,,2
+SDTM,AE,USUBJID,Unique Subject Identifier,text,20,Identifier,Collected,,,Yes,,3
+SDTM,AE,AESEQ,Sequence Number,integer,8,Identifier,Derived,,,Yes,,4
+SDTM,AE,AESTDTC,Start Date/Time of Adverse Event,datetime,,Timing,Collected,,,No,,5
+SDTM,AE,AEDECOD,Dictionary-Derived Term,text,200,Topic,Derived,CL_MEDDRA,,No,,6
+SDTM,AE,AESER,Serious Event,text,1,Qualifier,Collected,CL_YN,,No,,7
+ADAM,ADSL,STUDYID,Study Identifier,text,12,Identifier,Collected,,,Yes,,1
+ADAM,ADSL,USUBJID,Unique Subject Identifier,text,20,Identifier,Collected,,,Yes,,2
+ADAM,ADSL,TRT01P,Planned Treatment for Period 01,text,20,Identifier,Collected,CL_TRT,,No,,3
+ADAM,ADSL,TRT01A,Actual Treatment for Period 01,text,20,Identifier,Derived,CL_TRT,,No,,4
+ADAM,ADSL,AGE,Age at Baseline,integer,8,Analysis,Derived,,M_ADSL_AGE,No,,5
+ADAM,ADSL,SEX,Sex,text,1,Identifier,Collected,CL_SEX,,No,,6
+ADAM,ADSL,SAFFL,Subject in Safety Population,text,1,Analysis,Derived,CL_YN,M_ADSL_SAFFL,No,,7
+ADAM,ADAE,STUDYID,Study Identifier,text,12,Identifier,Collected,,,Yes,,1
+ADAM,ADAE,USUBJID,Unique Subject Identifier,text,20,Identifier,Collected,,,Yes,,2
+ADAM,ADAE,AESEQ,Sequence Number,integer,8,Identifier,Derived,,,Yes,,3
+ADAM,ADAE,PARAMCD,Parameter Code,text,8,Identifier,Derived,CL_AE_PARAM,,Yes,,4
+ADAM,ADAE,PARAM,Parameter,text,200,Identifier,Derived,CL_AE_PARAM,,Yes,,5
+ADAM,ADAE,AVAL,Analysis Value,float,,Analysis,Derived,,M_ADAE_AVAL,No,,6
+ADAM,ADAE,ASEV,Analysis Severity,text,8,Analysis,Derived,CL_SEVERITY,M_ADAE_AVAL,No,,7
+ADAM,ADAE,ASEVN,Analysis Severity (N),integer,8,Analysis,Derived,,M_ADAE_AVAL,No,,8
+ADAM,ADAE,ANL01FL,Analysis Flag,text,1,Analysis,Derived,CL_YN,M_ADAE_FLAG,No,,9
