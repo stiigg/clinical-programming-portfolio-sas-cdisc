@@ -1,11 +1,11 @@
 /* scan_logs_and_summarize.sas
    Scans log directory for warnings/errors and prints a summary. */
 
-%include "config/config_study.sas";
-%include "config/config_run_auto.sas";
+%include "&ROOT./config/global_config.sas";
+%include "&ROOT./config/select_run.sas";
 %include "macros/cdisc_logging.sas";
 
-%let _log_dir=&OUTPUT_ROOT./&LOG_SUBDIR.;
+%let _log_dir=%sysfunc(coalescec(&LOG_OUT., &LOG_ROOT.));
 filename logdir "&_log_dir.";
 
 data _null_;

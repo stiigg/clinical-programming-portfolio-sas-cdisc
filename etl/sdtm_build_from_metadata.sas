@@ -1,8 +1,8 @@
 /* sdtm_build_from_metadata.sas
    Wrapper that injects run config prior to executing raw_to_sdtm.sas. */
 
-%include "config/config_study.sas";
-%include "config/config_run_auto.sas";
+%include "&ROOT./config/global_config.sas";
+%include "&ROOT./config/select_run.sas";
 %include "macros/run_provenance.sas";
 %include "macros/cdisc_logging.sas";
 %include "macros/logging_counts.sas";

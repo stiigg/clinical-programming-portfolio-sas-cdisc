@@ -1,19 +1,14 @@
 /* tlf_run_from_metadata.sas
    Loop through specs/spec_tlf.csv and dispatch active outputs. */
 
-%include "config/config_study.sas";
-%include "config/config_run_auto.sas";
+%include "&ROOT./config/global_config.sas";
+%include "&ROOT./config/select_run.sas";
 %include "macros/cdisc_logging.sas";
 %include "macros/run_provenance.sas";
 %include "macros/tlf_dispatch.sas";
 %include "macros/tlf_programs_stub.sas";
 
-libname specs "specs";
-%let _tlf_dir=&OUTPUT_ROOT./tlf;
-options dlcreatedir;
-libname outtlf "&_tlf_dir.";
-
-proc import datafile="specs/spec_tlf.csv"
+proc import datafile="&SPECS_ROOT./spec_tlf.csv"
   out=work.tlf_spec dbms=csv replace;
   guessingrows=max;
 run;

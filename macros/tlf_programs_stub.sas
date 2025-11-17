@@ -3,7 +3,7 @@
 
 %macro _tlf_stub(tlf_id=, population=, param_family=, paramcd_list=, risk_level=, program_label=);
   %footnote_run;
-  data outtlf.&tlf_id.;
+  data tlf.&tlf_id.;
     length TLF_ID PROGRAM POPULATION PARAM_FAMILY PARAMCD_LIST RISK_LEVEL $40 message $200;
     TLF_ID = "&tlf_id.";
     PROGRAM = "&program_label.";
@@ -14,7 +14,7 @@
     message = "Stub output generated for portfolio wiring.";
   run;
 
-  %stamp_dataset(lib=outtlf, ds=&tlf_id.);
+  %stamp_dataset(lib=tlf, ds=&tlf_id.);
 %mend _tlf_stub;
 
 %macro efficacy_generic(tlf_id=, population=, param_family=, paramcd_list=, risk_level=);
