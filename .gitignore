@@ -1,0 +1,20 @@
+# Generated run configuration
+config/config_run_auto.sas
+
+# SAS logs and listings
+*.log
+*.lst
+
+# Local outputs and checkpoint files
+outputs/**/*.sas7bdat
+outputs/**/*.xpt
+outputs/**/*.rpt
+outputs/**/*.zip
+outputs/**/*.cmp
+outputs/**/*.pdf
+outputs/**/*.html
+outputs/**/*.rtf
+outputs/**/*.xlsx
+
+# Temporary files from compare/regression harness
+outputs/qc/*.cmp*

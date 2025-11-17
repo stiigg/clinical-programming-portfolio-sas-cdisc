@@ -1,6 +1,11 @@
 /* raw_to_sdtm.sas
    Driver program to convert raw clinical data to SDTM domains. */
 
+%include "config/config_study.sas";
+%include "config/config_run_auto.sas";
+%include "macros/run_provenance.sas";
+%include "macros/logging_counts.sas";
+
 %include "macros/cdisc_init.sas";
 %cdisc_init(study_config="config/config_study.sas");
 
