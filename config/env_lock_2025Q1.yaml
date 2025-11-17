@@ -1,0 +1,17 @@
+run_id: LOCK_2025Q1
+mode: PROD
+study_id: NPC001
+sap_version: SAP_v3_2
+data_cut_dt: 2025-03-31
+
+tlf_set: LOCK
+include_sd: true
+include_ad: true
+include_tlf: true
+
+adam_source_lib: adam
+sdtm_source_lib: sdtm
+
+output_root: outputs
+log_subdir: logs
+qc_subdir: qc

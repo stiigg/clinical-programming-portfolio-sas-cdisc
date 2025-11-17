@@ -1,6 +1,13 @@
 /* sdtm_to_adam.sas
    Driver program to convert SDTM datasets to ADaM analysis datasets. */
 
+%include "config/config_study.sas";
+%include "config/config_run_auto.sas";
+%include "macros/run_provenance.sas";
+%include "macros/logging_counts.sas";
+%include "macros/population_macros.sas";
+%include "macros/endpoint_macros.sas";
+
 %include "macros/cdisc_init.sas";
 %cdisc_init(study_config="config/config_study.sas");
 

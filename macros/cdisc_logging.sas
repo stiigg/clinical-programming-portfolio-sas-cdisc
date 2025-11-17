@@ -30,3 +30,11 @@
     %put WARNING: Log file &path. does not exist.;
   %end;
 %mend;
+
+%macro log_run_tlf_start(tlf_id, program_id, population, risk_level);
+  %put NOTE: [RUN=&RUN_ID.] --> TLF &tlf_id. (&program_id.) POP=&population. RISK=&risk_level. START;
+%mend log_run_tlf_start;
+
+%macro log_run_tlf_end(tlf_id, program_id);
+  %put NOTE: [RUN=&RUN_ID.] <-- TLF &tlf_id. (&program_id.) COMPLETE;
+%mend log_run_tlf_end;

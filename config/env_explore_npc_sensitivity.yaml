@@ -1,0 +1,17 @@
+run_id: EXPLORE_NPC_SENS
+mode: EXPLORATORY
+study_id: NPC001
+sap_version: SAP_v3_2
+data_cut_dt: 2025-02-15
+
+tlf_set: EXPLORATORY
+include_sd: false
+include_ad: true
+include_tlf: true
+
+adam_source_lib: adam
+sdtm_source_lib: sdtm
+
+output_root: outputs/exploratory
+log_subdir: logs
+qc_subdir: qc
