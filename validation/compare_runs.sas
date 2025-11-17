@@ -1,19 +1,18 @@
 /* compare_runs.sas
    Regression harness to compare ADaM datasets between two runs. */
 
-%include "config/config_study.sas";
-%include "config/config_run_auto.sas";
+%include "&ROOT./config/global_config.sas";
+%include "&ROOT./config/select_run.sas";
 
-%let BASE_RUN_ID = %sysfunc(coalescec(&BASE_RUN_ID., LOCK_2025Q1));
+%let BASE_RUN_ID = %sysfunc(coalescec(%superq(BASE_RUN_ID), LOCK_MAIN));
 %let CURR_RUN_ID = &RUN_ID.;
 
-%let _out_root=&OUTPUT_ROOT.;
-libname adam_base "&_out_root./&BASE_RUN_ID./adam";
-libname adam_curr "&_out_root./&CURR_RUN_ID./adam";
+libname adam_base "&ADAM_ROOT./&BASE_RUN_ID.";
+libname adam_curr "&ADAM_ROOT./&CURR_RUN_ID.";
 
 %macro compare_adam(ds=);
   %if %sysfunc(exist(adam_base.&ds.)) and %sysfunc(exist(adam_curr.&ds.)) %then %do;
-    %let cmp_out=&_out_root./&QC_SUBDIR./comp_&ds._&BASE_RUN_ID._vs_&CURR_RUN_ID.;
+    %let cmp_out=%sysfunc(coalescec(&QC_OUT., &QC_ROOT.))/comp_&ds._&BASE_RUN_ID._vs_&CURR_RUN_ID.;
     proc compare base=adam_base.&ds.
                  compare=adam_curr.&ds.
                  out="&cmp_out."

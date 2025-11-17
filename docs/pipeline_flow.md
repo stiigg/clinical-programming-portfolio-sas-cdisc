@@ -1,8 +1,8 @@
 # Pipeline Flow
 
 1. **Initialize Environment**
-   * `%cdisc_init` pulls `config/config_study.sas` and `config/config_global.sas`.
-   * Libraries are assigned for `raw`, `sdtm`, `adam`, `qc`, and `meta`.
+   * `%cdisc_init` (or the batch driver) loads `config/global_config.sas` and `config/select_run.sas`.
+   * Libraries are assigned for `raw`, `sdtm`, `adam`, `qc`, `tlf`, and `meta`, with run-specific destinations resolved by `config/run_*.sas`.
    * Macro search paths and project metadata variables are set.
 
 2. **Raw ➜ SDTM (`etl/raw_to_sdtm.sas`)**

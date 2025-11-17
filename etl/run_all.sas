@@ -1,8 +1,8 @@
 /* run_all.sas
    Orchestrates SDTM, ADaM, and TLF generation for a selected run config. */
 
-%include "config/config_study.sas";
-%include "config/config_run_auto.sas";
+%include "&ROOT./config/global_config.sas";
+%include "&ROOT./config/select_run.sas";
 
 %include "macros/run_provenance.sas";
 %include "macros/cdisc_logging.sas";
@@ -12,7 +12,8 @@
 %include "macros/tlf_dispatch.sas";
 %include "macros/tlf_programs_stub.sas";
 
-%run_init;
+%run_init(study_id=&STUDY_ID., run_id=&RUN_ID., mode=&MODE., sap_ver=&SAP_VERSION.,
+         data_cut=&DATA_CUT_DT., log_root=&LOG_OUT.);
 
 %if %upcase(&INCLUDE_SD) = Y %then %do;
   %include "etl/sdtm_build_from_metadata.sas";
