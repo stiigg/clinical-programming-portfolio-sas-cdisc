@@ -1,0 +1,13 @@
+DATASET,VARNAME,TYPE,LENGTH,LABEL,ORIGIN
+ADTTE,USUBJID,char,20,"Unique Subject Identifier","From ADSL"
+ADTTE,PARAMCD,char,8,"Parameter Code","Derived"
+ADTTE,PARAM,char,80,"Parameter Description","Derived"
+ADTTE,AVAL,num,8,"Analysis Value (days)","Derived"
+ADTTE,EVNTFL,char,1,"Event flag","Derived"
+ADTTE,CNSR,num,8,"Censoring indicator","Derived"
+ADTTE,STARTDT,num,8,"Start date of risk period","From ADSL"
+ADTTE,ENDDT,num,8,"Event/censoring date","Derived"
+ADTTE,STGGRP,char,3,"Stage group","From ADSL"
+ADTTE,SCLC_SUBTYPE,char,12,"Molecular subtype","From ADSL"
+ADTTE,CNSBLFL,char,1,"Baseline CNS metastasis","From ADSL"
+ADTTE,LINE,num,8,"Line of therapy","Metadata"

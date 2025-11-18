@@ -1,0 +1,75 @@
+/* macros/tte_censoring_rules.sas */
+%macro _tte_finalize(ds=);
+  data &ds.;
+    set &ds.;
+    length EVNTFL $1;
+    if missing(CNSR) then CNSR=1;
+    if missing(EVNTFL) then EVNTFL=ifc(CNSR=0, 'Y', 'N');
+    if missing(AVAL) and not missing(ENDDT) and not missing(STARTDT) then
+      AVAL = ENDDT - STARTDT + 1;
+  run;
+%mend;
+
+%macro OS_DEFAULT(ds=);
+  data &ds.;
+    set &ds.;
+    length EVNTFL $1;
+    if upcase(EVENTCD) = 'DEATH' then do;
+      CNSR=0;
+      EVNTFL='Y';
+    end;
+    else do;
+      CNSR=1;
+      EVNTFL='N';
+    end;
+  run;
+  %_tte_finalize(ds=&ds.);
+%mend;
+
+%macro PFS_IO(ds=);
+  data &ds.;
+    set &ds.;
+    length EVNTFL $1;
+    if upcase(EVENTCD) in ('PD','DEATH') then do;
+      CNSR=0;
+      EVNTFL='Y';
+    end;
+    else do;
+      CNSR=1;
+      EVNTFL='N';
+    end;
+  run;
+  %_tte_finalize(ds=&ds.);
+%mend;
+
+%macro TTP_CRT(ds=);
+  data &ds.;
+    set &ds.;
+    length EVNTFL $1;
+    if upcase(EVENTCD) in ('PD_LOCAL','PD_DISTANT') then do;
+      CNSR=0;
+      EVNTFL='Y';
+    end;
+    else do;
+      CNSR=1;
+      EVNTFL='N';
+    end;
+  run;
+  %_tte_finalize(ds=&ds.);
+%mend;
+
+%macro TTBM_RULE(ds=);
+  data &ds.;
+    set &ds.;
+    length EVNTFL $1;
+    if upcase(EVENTCD) in ('CNS_EVENT','BRAIN_MET') then do;
+      CNSR=0;
+      EVNTFL='Y';
+    end;
+    else do;
+      CNSR=1;
+      EVNTFL='N';
+    end;
+  run;
+  %_tte_finalize(ds=&ds.);
+%mend;
