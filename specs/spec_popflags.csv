@@ -1,0 +1,6 @@
+POP,FLAGVAR,CONDITION,LABEL
+ITT,ITTFL,not missing(RANDDT),"Intent-to-treat"
+SAF,SAFFL,not missing(TRTSDT),"Safety population"
+PPS,PPSFL,ITTFL='Y' and upcase(MAJPROTDEV) ne 'Y',"Per protocol"
+CNSPOS,CNSPOSFL,CNSBLFL='Y',"Baseline CNS metastasis"
+SUB_INFLAMED,INFLAMEDFL,SCLC_SUBTYPE='INFLAMED',"Inflamed subtype"

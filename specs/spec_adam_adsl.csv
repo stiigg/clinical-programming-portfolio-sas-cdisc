@@ -1,0 +1,7 @@
+DATASET,VARNAME,TYPE,LENGTH,LABEL,ORIGIN,DERIVATION
+ADSL,STGGRP,char,3,"Stage group (LS/ES)",Derived,"Map from SDTM or local TNM to LS vs ES"
+ADSL,CNSBLFL,char,1,"Baseline brain metastasis flag",Derived,"CNS lesion at baseline => 'Y' else 'N'"
+ADSL,SCLC_SUBTYPE,char,12,"Molecular subtype",Derived,"Biomarker / NGS mapped to ASCL1/NEUROD1/POU2F3/INFLAMED/OTHER"
+ADSL,DLL3POS,char,1,"DLL3 positive flag",Derived,"DLL3 IHC >= threshold from lab"
+ADSL,IOPRIOR,char,1,"Prior systemic ICI exposure",Derived,"From SDTM.CM Immune checkpoint inhibitors"
+ADSL,TARLAT_ELIG,char,1,"Eligible for DLL3-targeted therapy",Derived,"DLL3POS='Y' and IOPRIOR='N'"
