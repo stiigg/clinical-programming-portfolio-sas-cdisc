@@ -26,7 +26,11 @@
 %else %put NOTE: [RUN=&RUN_ID.] INCLUDE_AD=&INCLUDE_AD. so skipping ADaM build.;
 
 %if %upcase(&INCLUDE_TLF) = Y %then %do;
-  %include "etl/tlf_run_from_metadata.sas";
+  %include "etl/etl_tlf.sas";
+  %tlf_dispatch;
+  %include "validation/qc_compare_tlf.sas";
+  %include "validation/run_qc_by_tier.sas";
+  %run_qc_by_tier;
 %end;
 %else %put NOTE: [RUN=&RUN_ID.] INCLUDE_TLF=&INCLUDE_TLF. so skipping TLF build.;
 
