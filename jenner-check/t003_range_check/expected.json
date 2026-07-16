@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-16T05:55:00Z",
+  "_captured_run_id": "r_0d58d6a0d4c641f1bf393d985ce50eb8",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote vs (20 rows, 5 columns).",
+    "NOTE: Wrote vs_sysbp (10 rows, 5 columns).",
+    "NOTE: Wrote _range_chk (2 rows, 5 columns).",
+    "NOTE: PROC PRINT completed: 2 observations printed, 5 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

@@ -1,0 +1,6 @@
+                                            Out-of-range checks for VSORRES
+
+  Obs  USUBJID  VSTEST       VSDTC  VSSTRESU  VSORRES
+    1  S001     SYSBP   2025-04-16  mmHg          140
+    2  S006     SYSBP   2025-04-12  mmHg          137
+

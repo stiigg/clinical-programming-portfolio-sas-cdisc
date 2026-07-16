@@ -1,0 +1,7 @@
+{
+  "bundle": "t006_os_default_censoring",
+  "source_file": "macros/tte_censoring_rules.sas",
+  "source_blob_sha": "c0d550af8111039ce9329d593a2617935695ca81",
+  "source_commit": "196ac40edcb548b705cf3417fe426f0e2eb6dfe1",
+  "notes": "Caller for %OS_DEFAULT (and the shared %_tte_finalize it calls) -- the overall-survival censoring rule macros/derive_time_to_event.sas falls back to when a PARAMCD spec row's CNSR_RULE is blank. 6-row inline event dataset (mix of DEATH and non-DEATH EVENTCD) exercises both the CNSR/EVNTFL assignment and the AVAL-from-dates fallback in %_tte_finalize. Both macro bodies copied verbatim."
+}

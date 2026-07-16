@@ -1,0 +1,7 @@
+{
+  "bundle": "t007_apply_subgroup",
+  "source_file": "macros/apply_subgroup.sas",
+  "source_blob_sha": "3bb5bd4b3ad34f9f9826f9b288ebedf8ca5879e5",
+  "source_commit": "196ac40edcb548b705cf3417fe426f0e2eb6dfe1",
+  "notes": "Caller for %apply_subgroup, a text-generating macro (expands to a WHERE-clause fragment rather than emitting SAS steps itself). 5-row inline DM-shaped sample. Two call shapes exercised: no subgrp_id, and a subgrp_id supplied with no specs.spec_subgroup library assigned -- both correctly fall back to the unconditional '1=1' filter. Macro body copied verbatim."
+}

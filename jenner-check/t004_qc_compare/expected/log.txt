@@ -1,0 +1,64 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA base_dm
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote base_dm (5 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA qc_dm
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote qc_dm (5 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=base_dm
+
+NOTE: Read 5 rows from base_dm.
+NOTE: Wrote _base (5 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=qc_dm
+
+NOTE: Read 5 rows from qc_dm.
+NOTE: Wrote _comp (5 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC COMPARE base=_base compare=_comp
+
+NOTE: PROC COMPARE Summary:
+NOTE:   Base observations:    5
+NOTE:   Compare observations: 5
+NOTE:   Matched observations: 5
+NOTE:     - Equal:            4
+NOTE:     - Unequal:          1
+NOTE:   Base only:            0
+NOTE:   Compare only:         0
+NOTE:   Variables compared:   3
+NOTE:   Variables with differences:
+NOTE:     AGE: 1 differences
+NOTE: 
+NOTE:   All Comparisons (LISTALL):
+NOTE:     USUBJID=S001 | ARMCD: base=B compare=B [EQUAL]
+NOTE:     USUBJID=S001 | SEX: base=M compare=M [EQUAL]
+NOTE:     USUBJID=S001 | AGE: base=45 compare=45 [EQUAL]
+NOTE:     USUBJID=S002 | ARMCD: base=B compare=B [EQUAL]
+NOTE:     USUBJID=S002 | SEX: base=M compare=M [EQUAL]
+NOTE:     USUBJID=S002 | AGE: base=26 compare=26 [EQUAL]
+NOTE:     USUBJID=S003 | ARMCD: base=B compare=B [EQUAL]
+NOTE:     USUBJID=S003 | SEX: base=F compare=F [EQUAL]
+NOTE:     USUBJID=S003 | AGE: base=63 compare=36 [DIFF] (diff=-27.000000)
+NOTE:     USUBJID=S004 | ARMCD: base=A compare=A [EQUAL]
+NOTE:     USUBJID=S004 | SEX: base=F compare=F [EQUAL]
+NOTE:     USUBJID=S004 | AGE: base=41 compare=41 [EQUAL]
+NOTE:     USUBJID=S005 | ARMCD: base=B compare=B [EQUAL]
+NOTE:     USUBJID=S005 | SEX: base=F compare=F [EQUAL]
+NOTE:     USUBJID=S005 | AGE: base=65 compare=65 [EQUAL]
+NOTE: PROC PRINT data=work.dm_diffs
+
+NOTE: PROC PRINT completed: 1 observations printed, 6 variables

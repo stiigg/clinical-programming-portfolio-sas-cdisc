@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-16T05:45:00Z",
+  "_captured_run_id": "r_4de29b88347c4f23b68b58033e6fdc81",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote _dm_raw (10 rows, 8 columns).",
+    "NOTE: Running standard SDTM checks for dm",
+    "NOTE: Wrote sdtm.dm (10 rows, 13 columns).",
+    "NOTE: PROC FREQ statement used.",
+    "NOTE: PROC PRINT completed: 10 observations printed, 7 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

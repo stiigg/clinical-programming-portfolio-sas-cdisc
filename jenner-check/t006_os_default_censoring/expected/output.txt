@@ -1,0 +1,10 @@
+                        OS_DEFAULT censoring: DEATH events uncensored, everything else censored
+
+USUBJID   EVENTCD    STARTDT      ENDDT  AVAL  CNSR  EVNTFL
+S001     DEATH     12JAN2025  24JUN2025   164     0  Y
+S002     PD        15JAN2025  27JUN2025   164     1  N
+S003     DEATH     14JAN2025  04JUN2025   142     0  Y
+S004     CENSORED  05JAN2025  26JUN2025   173     1  N
+S005     PD        15JAN2025  12JUN2025   149     1  N
+S006     CENSORED  24JAN2025  02JUN2025   130     1  N
+

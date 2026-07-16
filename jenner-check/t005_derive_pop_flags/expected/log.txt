@@ -1,0 +1,24 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library ADAM assigned path=/tmp/work/r_ccde08a4859947d6bfd2c10fac4c9638/work/7bd3feaa-2659-4b19-ae9d-c8278c3973f1.
+NOTE: DATA adam.adsl
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote adam.adsl (5 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adam.adsl
+
+
+NOTE: Read 5 rows from adam.adsl.
+NOTE: Wrote adam.adsl (5 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=adam.adsl
+
+NOTE: PROC PRINT completed: 5 observations printed, 8 variables

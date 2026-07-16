@@ -1,0 +1,13 @@
+{
+  "_captured_at": "2026-07-16T06:15:00Z",
+  "_captured_run_id": "r_11f7888b31a641699f9b992390c9b44b",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote dm_all (5 rows, 4 columns).",
+    "NOTE: Wrote dm_fallback (5 rows, 4 columns).",
+    "NOTE: PROC PRINT completed: 5 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

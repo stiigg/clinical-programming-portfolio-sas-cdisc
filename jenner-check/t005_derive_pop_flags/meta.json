@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_derive_pop_flags",
+  "source_file": "macros/population_macros.sas",
+  "source_blob_sha": "e06876e4401d9acc8d4bc5f87a36e54a36e19e16",
+  "source_commit": "196ac40edcb548b705cf3417fe426f0e2eb6dfe1",
+  "notes": "Caller for %derive_pop_flags, exercising the default (no specs.spec_popflags) branch that derives ITTFL/SAFETYFL/PPFL directly. 5-subject inline ADSL-shaped sample with RANDDT/TRTDT/PROTVIOL. The population-flag derivation logic is copied verbatim; the final %log_counts call (gated behind %sysfunc(macroexist(log_counts)) in the source -- MACROEXIST is not a documented SAS 9.4 function) is dropped rather than adapted around, since macros/logging_counts.sas isn't part of this bundle."
+}

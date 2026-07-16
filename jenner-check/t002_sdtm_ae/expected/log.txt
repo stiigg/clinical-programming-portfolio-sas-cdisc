@@ -1,0 +1,34 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library SDTM assigned path=/tmp/work/r_f0790159bdb74c49b7814e7102a36f14/work/a514f0b6-b47c-40a9-820f-6ace1ddd9f7e.
+NOTE: DATA _ae_raw
+
+NOTE: Processing inline DATALINES (12 lines)
+
+NOTE: Read 11 rows from DATALINES.
+NOTE: Wrote _ae_raw (11 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Building AE domain using /tmp/work/r_f0790159bdb74c49b7814e7102a36f14/work/a514f0b6-b47c-40a9-820f-6ace1ddd9f7e/sdtm_mapping.csv
+NOTE: Running standard SDTM checks for ae
+NOTE: DATA sdtm.ae
+
+
+NOTE: Read 11 rows from _ae_raw.
+NOTE: Wrote sdtm.ae (11 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=sdtm.ae
+
+NOTE: Read 11 rows from sdtm.ae.
+NOTE: Wrote sdtm.ae (11 rows, 10 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_usubjid.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC PRINT data=sdtm.ae
+
+NOTE: PROC PRINT completed: 11 observations printed, 7 variables
