@@ -1,0 +1,33 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library SDTM assigned path=/tmp/work/r_4de29b88347c4f23b68b58033e6fdc81/work/1950e073-4095-4258-9389-6f5737214455.
+NOTE: DATA _dm_raw
+
+NOTE: Processing inline DATALINES (11 lines)
+
+NOTE: Read 10 rows from DATALINES.
+NOTE: Wrote _dm_raw (10 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Running standard SDTM checks for dm
+NOTE: DATA sdtm.dm
+
+
+NOTE: Read 10 rows from _dm_raw.
+NOTE: Wrote sdtm.dm (10 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=sdtm.dm
+
+NOTE: Read 10 rows from sdtm.dm.
+NOTE: Wrote sdtm.dm (10 rows, 13 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_usubjid.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC PRINT data=sdtm.dm
+
+NOTE: PROC PRINT completed: 10 observations printed, 7 variables

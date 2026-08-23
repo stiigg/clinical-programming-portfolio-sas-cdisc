@@ -1,0 +1,29 @@
+                                                   The FREQ Procedure
+
+                                     Cumulative    Cumulative
+USUBJID    Frequency    Percent     Frequency      Percent
+----------------------------------------------------------------
+S001               1     10.00            1        10.00
+S002               1     10.00            2        20.00
+S003               1     10.00            3        30.00
+S004               1     10.00            4        40.00
+S005               1     10.00            5        50.00
+S006               1     10.00            6        60.00
+S007               1     10.00            7        70.00
+S008               1     10.00            8        80.00
+S009               1     10.00            9        90.00
+S010               1     10.00           10       100.00
+                                          SDTM.DM built via the sdtm_dm macro
+
+USUBJID  ARMCD      ARM  SEX  AGE       RFSTD       RFEND
+S001     B      DRUGA    M     45  2025-01-12  2025-06-24
+S002     B      PLACEBO  M     26  2025-01-15  2025-06-27
+S003     B      DRUGA    F     63  2025-01-14  2025-06-04
+S004     A      DRUGA    F     41  2025-01-05  2025-06-26
+S005     B      PLACEBO  F     65  2025-01-15  2025-06-12
+S006     A      PLACEBO  M     51  2025-01-24  2025-06-02
+S007     B      PLACEBO  F     55  2025-01-05  2025-06-21
+S008     A      PLACEBO  F     73  2025-01-13  2025-06-25
+S009     B      DRUGA    F     32  2025-01-10  2025-06-13
+S010     A      DRUGA    M     30  2025-01-21  2025-06-19
+

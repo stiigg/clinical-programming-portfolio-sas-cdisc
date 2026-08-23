@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_sdtm_ae",
+  "source_file": "macros/sdtm_domain_ae.sas",
+  "source_blob_sha": "4adb7ea874364210cdbe9441e09bb0ed8de7ad79",
+  "source_commit": "196ac40edcb548b705cf3417fe426f0e2eb6dfe1",
+  "notes": "Caller for %sdtm_ae (also pulls in the %sdtm_standard_checks helper from macros/sdtm_generic.sas). Sample data is an 11-row inline copy of data/raw/ae.csv's actual contents (same columns/values). The macro body is copied verbatim; only the proc import of &raw_dir./ae.csv is replaced with the equivalent inline DATALINES step, since the runner uploads source only, no data files."
+}

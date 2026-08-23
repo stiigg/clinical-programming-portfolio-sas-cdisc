@@ -1,0 +1,9 @@
+                       ADSL population flags via the default (no-spec) branch of derive_pop_flags
+
+USUBJID  ARMCD     RANDDT      TRTDT  PROTVIOL  ITTFL  SAFETYFL  PPFL
+S001     B      12JAN2025  12JAN2025  N         Y      Y         Y
+S002     B      15JAN2025          .  N         Y      N         Y
+S003     B      14JAN2025  14JAN2025  Y         Y      Y         N
+S004     A      05JAN2025  06JAN2025  N         Y      Y         Y
+S005     B              .          .  N         N      N         N
+

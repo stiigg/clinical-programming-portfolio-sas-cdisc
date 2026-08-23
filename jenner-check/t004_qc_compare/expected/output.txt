@@ -1,0 +1,24 @@
+The COMPARE Procedure
+Comparison of WORK._BASE with WORK._COMP
+Data Set Summary
+Dataset          Created    Observations    Variables
+WORK._BASE                             5            4
+WORK._COMP                             5            4
+Variables Summary
+Number of Variables in Common: 4
+Observation Summary
+Observation       Base    Compare
+First Obs            1          1
+Last Obs             5          5
+Number of Observations in Common: 5
+Number of Observations with Some Compared Variables Unequal: 1
+Values Comparison Summary
+Number of Variables Compared with All Observations Equal: 2
+Number of Variables Compared with Some Observations Unequal: 1
+Variable    Type    N Obs    N Dif    MaxDiff
+AGE         NUM         5        1      27.00
+                                           qc_compare: base_dm vs qc_dm diffs
+
+USUBJID  _TYPE_  _VAR_  _BASE_  _COMPARE_  _DIF_
+S003     DIF     AGE        63         36    -27
+

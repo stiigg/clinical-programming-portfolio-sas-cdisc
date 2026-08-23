@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_qc_compare",
+  "source_file": "macros/qc_compare.sas",
+  "source_blob_sha": "c5444f767a3811866a14f51ab5f6aff7b928c305",
+  "source_commit": "196ac40edcb548b705cf3417fe426f0e2eb6dfe1",
+  "notes": "Caller for %qc_compare, the independent-programming PROC COMPARE macro that validation/adam_qc_main.sas and validation/sdtm_qc_main.sas both call. Two small DM-shaped inline datasets (5 rows each) with one deliberate AGE mismatch on subject S003 so the diff is genuine and visible in the pinned log/output. Macro body copied verbatim."
+}

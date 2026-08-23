@@ -1,0 +1,27 @@
+                                                   The FREQ Procedure
+
+                                     Cumulative    Cumulative
+USUBJID    Frequency    Percent     Frequency      Percent
+----------------------------------------------------------------
+S001               2     18.18            2        18.18
+S003               2     18.18            4        36.36
+S005               2     18.18            6        54.55
+S007               2     18.18            8        72.73
+S008               1      9.09            9        81.82
+S009               1      9.09           10        90.91
+S010               1      9.09           11       100.00
+                                          SDTM.AE built via the sdtm_ae macro
+
+USUBJID     AETERM     AESEV  AESER               REL     AESTDTC     AEENDTC
+S001     DIZZINESS  MODERATE  Y      POSSIBLY RELATED  2025-02-10  2025-02-27
+S001     NAUSEA     SEVERE    Y      NOT RELATED       2025-02-03  2025-02-13
+S003     NAUSEA     MODERATE  N      RELATED           2025-02-05  2025-02-23
+S003     NAUSEA     MODERATE  N      POSSIBLY RELATED  2025-02-09  2025-02-07
+S005     FATIGUE    SEVERE    Y      POSSIBLY RELATED  2025-02-12  2025-02-22
+S005     NAUSEA     MODERATE  Y      POSSIBLY RELATED  2025-02-07  2025-02-19
+S007     DIZZINESS  MODERATE  Y      NOT RELATED       2025-02-08  2025-02-22
+S007     HEADACHE   SEVERE    N      NOT RELATED       2025-02-22  2025-02-22
+S008     HEADACHE   MILD      Y      POSSIBLY RELATED  2025-02-04  2025-02-07
+S009     NAUSEA     MILD      N      NOT RELATED       2025-02-24  2025-02-16
+S010     DIZZINESS  MODERATE  N      RELATED           2025-02-15  2025-02-03
+

@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_sdtm_dm",
+  "source_file": "macros/sdtm_domain_dm.sas",
+  "source_blob_sha": "167be4ea30778f7813f367cffe7dc051744730b9",
+  "source_commit": "196ac40edcb548b705cf3417fe426f0e2eb6dfe1",
+  "notes": "Caller for %sdtm_dm (also pulls in macros/sdtm_generic.sas for %sdtm_date_from_iso and %sdtm_standard_checks). Sample data is a 10-row inline copy of data/raw/dm.csv's actual contents (same columns/values). The macro bodies are copied verbatim; only the proc import of &raw_dir./dm.csv is replaced with the equivalent inline DATALINES step, since the runner uploads source only, no data files."
+}
